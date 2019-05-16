@@ -10,6 +10,8 @@ for a in flist:
         im.close()
         if height > width:
             os.remove(a)
+        if height == width:
+            os.remove(a)
             
         
 
