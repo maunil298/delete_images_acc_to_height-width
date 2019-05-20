@@ -10,8 +10,12 @@ for a in flist:
         im.close()
         if height > width:
             os.remove(a)
+            del_count = del_count + 1
         if height == width:
             os.remove(a)
+            del_count = del_count + 1
+
+print('Deleted ' + str(del_count) + ' images')
             
         
 
